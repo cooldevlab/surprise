@@ -1,0 +1,68 @@
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/heart.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: 50%;
+  /* opacity: 0.65; */
+  background-attachment: fixed;
+  background-position: center;
+}
+.face1, .face2 {
+  position: fixed;
+  height: 50vh;
+  width: 50vh;
+  top: 35vh;
+  border-radius: 50%;
+  background-position: center;
+  background-size: 100%;
+  opacity: 1;
+}
+.face1{
+  left: 10vw;
+  background-image: url("./images/nb-sq.jpg");
+}
+.face2{
+  right: 10vw;
+  background-image: url("./images/an-sq.jpeg");
+}
+
+.mobile-portrait-container{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  display: none;
+  background: #333;
+}
+.warning {
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+}
+.message {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  font-family: cursive;
+  /* position: fixed; */
+}
+
+@media screen and (orientation:portrait) and (max-device-width:800px) {
+  .mobile-portrait-container {
+    display: block;
+  }
+  .container {
+    display: none;
+  }
+}
+@media screen and (orientation:landscape) {
+
+}
